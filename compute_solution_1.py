@@ -5,7 +5,7 @@ import sys
 test_file_name = sys.argv[1]
 solution_file_name = sys.argv[2]
 f = open(test_file_name)
-  
+
 edge_weights = {}
 
 f.readline()
@@ -21,8 +21,7 @@ for line in f:
     edge_weights[key] = 0
   edge_weights[key] += 1
 
-f_out = open(solution_file_name,"w")
+f_out = open(solution_file_name, "w")
 
 for key in edge_weights:
   f_out.write(key + "," + str(edge_weights[key]) + "\n")
-
