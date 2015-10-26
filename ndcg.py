@@ -5,6 +5,10 @@ import operator
 class NDCGComputer:
 
   def __init__(self, submission_, solution_, K_):
+    ''' Here submission_ and solution_ are each a dictionary, mapping
+        a pair of stations (represented via a string) to a predicted / real
+        route-activity value (float) for one day only (and the same day
+        of course). K_ is a limit: '''
     self.submission = submission_
     self.solution = solution_
     self.K = K_

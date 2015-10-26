@@ -18,7 +18,7 @@ class RankingEvaluator:
     for day in days:
       submission = self.submission_data.get(day)
       solution = self.solution_data.get(day)
-      computer = NDCGComputer(submission,solution, 100)
+      computer = NDCGComputer(submission, solution, 100)
       average_NDCG += computer.run()
     average_NDCG /= float(len(days))
     return average_NDCG

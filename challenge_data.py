@@ -16,7 +16,7 @@ class ChallengeData:
         self.daily_lists[day] = {}
       self.daily_lists[day][entity] = value
 
-  def get(self,day):
+  def get(self, day):
     return self.daily_lists[day]
 
   def get_days(self):
