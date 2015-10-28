@@ -18,7 +18,7 @@ A _solution file_ is the reference, the ground truth, that contains data derived
 
 The sample solution file for task 1 is [data/task1-BRP/mini1-solution.csv](https://github.com/bubichallenge/challenge-codes/blob/master/data/task1-BRP/mini1-solution.csv), and for the second task: [data/task2-DSDP/mini2-solution.csv](https://github.com/bubichallenge/challenge-codes/blob/master/data/task2-DSDP/mini2-solution.csv).
 
-To see how they have been created from the raw csv test data, see the end of this readme ([Other scripts](#Other scripts)).
+To see how they have been created from the raw csv test data, see the end of this readme ([Other scripts](###Other scripts)).
 
 
 ### Sample submission files
