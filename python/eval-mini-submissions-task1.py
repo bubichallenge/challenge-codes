@@ -1,11 +1,10 @@
 import sys
-from challenge_data import ChallengeData
-from ndcg import NDCGComputer
+from eval.challenge_data import ChallengeData
+from eval.ndcg import NDCGComputer
 
-solution_path = "data/task1-BRP/mini1-ground-truth.csv"
+solution_path = "data/task1-BRP/mini1-solution.csv"
 submission_paths = ["data/task1-BRP/mini1-submission-perfect.csv",
                     "data/task1-BRP/mini1-submission-good.csv",
-                    "data/task1-BRP/mini1-submission-random.csv",
                     "data/task1-BRP/mini1-submission-bad.csv"]
 
 solution_data = ChallengeData()
