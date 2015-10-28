@@ -1,14 +1,12 @@
 # Evaluation codes for the MOL Bubi Challenge (2015)
 
-Challenge page with the task descriptions:  https://dms.sztaki.hu/bubi
-
-// Work in progress //
+Probably you'll want to check the [MOL Bubi Challenge page](https://dms.sztaki.hu/bubi) at first, it has the task descriptions.
 
 ## Data files
 
 ### Raw data
 
-We generated a small example dataset with 300 travels in 10 days between 3 fake stations ("A", "B" and "C").
+We generated a small example dataset with 300 travels in 10 days between three fake stations ("A", "B" and "C").
 The set has been cut into two parts: train (7 days: the first five consecutive days of the ten, plus two not consecutively) and test (3 days).
 
 These are available under the "data/raw" folder.
@@ -25,7 +23,7 @@ To see how they have been created from the raw csv test data, see the end of thi
 
 ### Sample submission files
 
-These were edited by hand, to provide some small examples. You can find them in the folders "data/task1-BRP" and "data/task2-DSDP".
+These were edited by hand, to provide some small examples. You can find them in the folders [data/task1-BRP](https://github.com/bubichallenge/challenge-codes/tree/master/data/task1-BRP) and [data/task2-DSDP](https://github.com/bubichallenge/challenge-codes/tree/master/data/task2-DSDP).
 
 ---------
 
