@@ -9,16 +9,16 @@ Probably you'll want to check the [MOL Bubi Challenge page](https://dms.sztaki.h
 We generated a small example dataset with 300 travels in 10 days between three fake stations ("A", "B" and "C").
 The set has been cut into two parts: train (7 days: the first five consecutive days of the ten, plus two not consecutively) and test (3 days).
 
-These are available under the "data/raw" folder.
+These are available under the [data/raw](https://github.com/bubichallenge/challenge-codes/tree/master/data/raw) folder.
 
 ### Solution files
 
-A "solution file" is the reference, the ground truth, that contains data derived from the
+A _solution file_ is the reference, the ground truth, that contains data derived from the
 "test" part of the raw data -- the information that has to be predicted by the challenge participants.
 
 The sample solution file for task 1 is [data/task1-BRP/mini1-solution.csv](https://github.com/bubichallenge/challenge-codes/blob/master/data/task1-BRP/mini1-solution.csv), and for the second task: [data/task2-DSDP/mini2-solution.csv](https://github.com/bubichallenge/challenge-codes/blob/master/data/task2-DSDP/mini2-solution.csv).
 
-To see how they have been created from the raw csv test data, see the end of this readme ('Other scripts').
+To see how they have been created from the raw csv test data, see the end of this readme ([Other scripts](#Other scripts)).
 
 
 ### Sample submission files
@@ -30,7 +30,7 @@ These were edited by hand, to provide some small examples. You can find them in 
 ## Scripts
 
 All scripts are written in Python (tested with Python 2.7.9, some of them won't work with Python3), 
-and can be found in the "python" folder.
+and can be found in the [python](https://github.com/bubichallenge/challenge-codes/tree/master/python) folder.
 
 Tests can be run with [pytest](http://pytest.org "py.test"):
 
