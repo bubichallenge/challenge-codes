@@ -75,8 +75,10 @@ When running the above command, you should see the RMSE values of the sample sub
 <a name="otherscripts"/>
 ### Other scripts
 
-To make it easier to understand what the prediction tasks are exactly, we included scripts that create the perfect solution files from the raw data containing the bicycle trips of the days of the 'test' subset ('test' subset meaning the non-training days, about which we want to make predictions).
-These scripts are: 
+To make it easier to understand what the prediction tasks are exactly, we included scripts that create
+the perfect solution files from the raw data containing the bicycle trips of the days of the
+_test_ subset (_'test'_ subset meaning the non-training days, about which we want to make predictions).
+These scripts are:
 - [python/preproc/compute_solution_1.py](https://github.com/bubichallenge/challenge-codes/blob/master/python/preproc/compute_solution_1.py)
 - [python/preproc/compute_solution_2.py](https://github.com/bubichallenge/challenge-codes/blob/master/python/preproc/compute_solution_2.py)
 
@@ -93,4 +95,4 @@ Similarly, the small [solution file for task 2](https://github.com/bubichallenge
 python python/preproc/compute_solution_2.py data/raw/mini_test.csv data/task2-DSDP/mini2-solution.csv
 ```
 
-These scripts ('compute_solution_x.py) were used to generate the real solution files, against which the team submissions will be evaluated.
+These scripts (_compute_solution_x.py_) were used to generate the real solution files, against which the team submissions will be evaluated.
