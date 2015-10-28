@@ -1,4 +1,5 @@
 import sys
+import operator
 
 # the structure of the test file is the same as the structure of the train.csv
 
@@ -7,7 +8,8 @@ solution_file_name = sys.argv[2]
 station_max_vals = {}
 station_vals = {}
 
-f.readline()
+f = open(test_file_name, "r")
+f.readline()  # header line
 
 for line in f:
   line = line.strip("\n")
@@ -26,7 +28,9 @@ for line in f:
   if station_vals[key_s] < station_max_vals[key_s]:
     station_max_vals[key_s] = station_vals[key_s]
 
-ff = open(solution_file_name, "w")
+f_out = open(solution_file_name, "w")
 
-for key in station_max_vals:
-  ff.write(key + "," + str(-station_max_vals[key]) + "\n")
+sorted_max_vals = sorted(station_max_vals.items(), key=operator.itemgetter(0))
+for item in sorted_max_vals:
+  f_out.write(item[0] + "," + str(-item[1]) + "\n")
+
