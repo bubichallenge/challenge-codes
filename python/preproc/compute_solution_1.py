@@ -1,14 +1,15 @@
 import sys
+import operator
 
 # the structure of the test file is the same as the structure of the train.csv
 
 test_file_name = sys.argv[1]
 solution_file_name = sys.argv[2]
-f = open(test_file_name)
+f = open(test_file_name, "r")
 
 edge_weights = {}
 
-f.readline()
+l = f.readline() # header
 
 for line in f:
   line = line.strip("\n")
@@ -23,5 +24,6 @@ for line in f:
 
 f_out = open(solution_file_name, "w")
 
-for key in edge_weights:
-  f_out.write(key + "," + str(edge_weights[key]) + "\n")
+sorted_edge_weights = sorted(edge_weights.items(), key=operator.itemgetter(0))
+for item in sorted_edge_weights:
+  f_out.write(item[0] + "," + str(item[1]) + "\n")
