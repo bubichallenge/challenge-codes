@@ -6,8 +6,8 @@ Probably you'll want to check the [MOL Bubi Challenge page](https://dms.sztaki.h
 
 ### Raw data
 
-We generated a small example dataset with 300 travels in 10 days between three fake stations ("A", "B" and "C").
-The set has been cut into two parts: train (7 days: the first five consecutive days of the ten, plus two not consecutively) and test (3 days).
+We generated a small example dataset with 300 travels in ten days between three fake stations ("A", "B" and "C").
+The set has been cut into two parts: _train_ (7 days: the first five consecutive days of the ten, plus two not consecutively) and _test_ (the ramaining 3 days).
 
 These are available under the [data/raw](https://github.com/bubichallenge/challenge-codes/tree/master/data/raw) folder.
 
@@ -55,7 +55,7 @@ Note that the first script calls the second one.
 
 ### Runner scripts
 
-These are here just to run the evaluator codes scripts on the example data.
+These just to run the evaluator scripts on the example data, and print the results to screen.
 
 #### Evaluate the sample submissions for task 1
 
@@ -64,8 +64,7 @@ Run this:
 ```bash
 $ python python/eval-mini-submissions-task1.py
 ```
-
-The output (printed to the screen) will include daily NDCG values, and a summary (average) for each of the three days of the test dataset.
+The output will include daily nDCG values, and a summary (average of the daily values) for each of the sample submission files.
 
 
 #### Evaluate the sample submissions for task 2
