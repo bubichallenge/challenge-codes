@@ -30,5 +30,6 @@ python python/preproc/compute_solution_1.py data/raw/mini_test.csv data/task1-BR
 
 All scripts are written in Python, and can be found in the "python" folder. (w.i.p.)
 
+Tests can be run with [pytest](http://pytest.org "py.test").
 
 
