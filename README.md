@@ -18,7 +18,7 @@ A _solution file_ is the reference, the ground truth, that contains data derived
 
 The sample solution file for task 1 is [data/task1-BRP/mini1-solution.csv](https://github.com/bubichallenge/challenge-codes/blob/master/data/task1-BRP/mini1-solution.csv), and for the second task: [data/task2-DSDP/mini2-solution.csv](https://github.com/bubichallenge/challenge-codes/blob/master/data/task2-DSDP/mini2-solution.csv).
 
-To see how they have been created from the raw csv test data, see the end of this readme ([Other scripts](###Other scripts)).
+To see how they have been created from the raw csv test data, see the end of this readme ([Other scripts](#otherscripts)).
 
 
 ### Sample submission files
@@ -75,6 +75,7 @@ $ python python/eval-mini-submissions-task2.py
 ```
 When running the above command, you should see the RMSE values of the sample submission files printed to the console screen.
 
+<a name="otherscripts"/>
 ### Other scripts
 
 To make it easier to understand what the prediction tasks are exactly, we included scripts that create the perfect solution files from the raw data containing the bicycle trips of the days of the 'test' subset ('test' subset meaning the non-training days, about which we want to make predictions).
