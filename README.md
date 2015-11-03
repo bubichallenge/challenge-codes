@@ -7,7 +7,8 @@ Probably you'll want to check the [MOL Bubi Challenge page](https://dms.sztaki.h
 ### Raw data
 
 We generated a small example dataset with 300 travels in ten days between three fake stations ("A", "B" and "C").
-The set has been cut into two parts: _train_ (7 days: the first five consecutive days of the ten, plus two not consecutively) and _test_ (the ramaining 3 days).
+The set has been cut into two parts: _train_ (7 days: the first five consecutive days of the ten, plus
+two not consecutively) and _test_ (the remaining 3 days).
 
 These are available under the [data/raw](https://github.com/bubichallenge/challenge-codes/tree/master/data/raw) folder.
 
@@ -16,14 +17,17 @@ These are available under the [data/raw](https://github.com/bubichallenge/challe
 A _solution file_ is the reference, the ground truth, that contains data derived from the
 "test" part of the raw data -- the information that has to be predicted by the challenge participants.
 
-The sample solution file for task 1 is [data/task1-BRP/mini1-solution.csv](https://github.com/bubichallenge/challenge-codes/blob/master/data/task1-BRP/mini1-solution.csv), and for the second task: [data/task2-DSDP/mini2-solution.csv](https://github.com/bubichallenge/challenge-codes/blob/master/data/task2-DSDP/mini2-solution.csv).
+The sample solution file for task 1 is [data/task1-BRP/mini1-solution.csv](https://github.com/bubichallenge/challenge-codes/blob/master/data/task1-BRP/mini1-solution.csv),
+and for the second task: [data/task2-DSDP/mini2-solution.csv](https://github.com/bubichallenge/challenge-codes/blob/master/data/task2-DSDP/mini2-solution.csv).
 
 To see how they have been created from the raw _test_ data, see the end of this readme ([Other scripts](#otherscripts)).
 
 
 ### Sample submission files
 
-These were edited by hand, to provide some small examples. You can find them in the folders [data/task1-BRP](https://github.com/bubichallenge/challenge-codes/tree/master/data/task1-BRP) and [data/task2-DSDP](https://github.com/bubichallenge/challenge-codes/tree/master/data/task2-DSDP).
+These were edited by hand, to provide some small examples. You can find them in the
+folders [data/task1-BRP](https://github.com/bubichallenge/challenge-codes/tree/master/data/task1-BRP)
+and [data/task2-DSDP](https://github.com/bubichallenge/challenge-codes/tree/master/data/task2-DSDP).
 
 ---------
 
@@ -62,14 +66,16 @@ These just to run the evaluator scripts on the example data, and print the resul
 ```bash
 $ python python/eval-mini-submissions-task1.py
 ```
-The output will include daily nDCG values, and a summary (average of the daily values) for each of the sample submission files.
+The output will include daily nDCG values, and a summary (average of the daily values) for
+each of the sample submission files.
 
 #### Evaluate the sample submissions for task 2
 
 ```bash
 $ python python/eval-mini-submissions-task2.py
 ```
-When running the above command, you should see the RMSE values of the sample submission files printed to the console screen.
+When running the above command, you should see the RMSE values of the sample
+submission files printed to the console screen.
 
 
 <a name="otherscripts"/>
@@ -95,4 +101,5 @@ Similarly, the small [solution file for task 2](https://github.com/bubichallenge
 python python/preproc/compute_solution_2.py data/raw/mini_test.csv data/task2-DSDP/mini2-solution.csv
 ```
 
-These scripts (_compute_solution_x.py_) were used to generate the real solution files, against which the team submissions will be evaluated.
+These scripts (_compute_solution_x.py_) were used to generate the real solution files,
+against which the team submissions will be evaluated.
